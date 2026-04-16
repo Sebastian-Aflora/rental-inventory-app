@@ -1,8 +1,8 @@
 const firebaseConfig = {
-  apiKey: "PASTE_HERE",
-  authDomain: "PASTE_HERE",
-  projectId: "PASTE_HERE",
-  storageBucket: "PASTE_HERE",
+  apiKey: "AIzaSyC99NUO9YS1c5qQ38rbr_n6rBpCXZfsMkI",
+  authDomain: "rental-inventory-96b16.firebaseapp.com",
+  projectId: "rental-inventory-96b16",
+  storageBucket: "rental-inventory-96b16.firebasestorage.app",
 };
 
 firebase.initializeApp(firebaseConfig);
