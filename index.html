@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventory</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+<h2>🏠 Inventory Manager</h2>
+
+<div id="login">
+  <input id="pin" placeholder="Enter PIN">
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="app" style="display:none">
+
+<select id="apartment" onchange="loadItems()">
+  <option value="apt1">Apartment 1</option>
+  <option value="apt2">Apartment 2</option>
+</select>
+
+<div id="items"></div>
+
+<button onclick="resetData()">🔄 Reset (Admin)</button>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage-compat.js"></script>
+
+<script src="firebase.js"></script>
+<script src="app.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+</body>
+</html>

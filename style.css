@@ -1,0 +1,7 @@
+body { font-family: Arial; padding: 10px; }
+button { padding: 8px; margin: 3px; }
+.item { border: 1px solid #ccc; padding: 10px; margin: 8px 0; }
+.ok { background: #d4edda; }
+.missing { background: #f8d7da; }
+.damaged { background: #fff3cd; }
+img { width: 100px; margin-top: 5px; }
