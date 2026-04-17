@@ -103,4 +103,3 @@ function translateNote(btn) {
   const url = "https://translate.google.com/?sl=auto&tl=en&text=" + encodeURIComponent(text);
   window.open(url, "_blank");
 }
-}
