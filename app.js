@@ -1,4 +1,4 @@
-no let role = "staff";
+let role = "staff";
 
 function login() {
   const pin = document.getElementById("pin").value;
