@@ -46,6 +46,8 @@ function render(data) {
 
       <input placeholder="Notes" value="${item.notes || ''}" 
       onchange="saveNote(${i}, this.value)">
+      
+      <button onclick="translateNote(this)">🌍 Translate</button>
 
       <input type="file" accept="image/*" capture="environment"
       onchange="uploadPhoto(${i}, this.files[0])">
@@ -93,4 +95,10 @@ function resetData() {
   const apt = document.getElementById("apartment").value;
 
   db.collection("inventory").doc(apt).set({ items: defaultItems });
+  
+  function translateNote(btn) {
+  const text = btn.previousElementSibling.value;
+  const url = "https://translate.google.com/?sl=auto&tl=en&text=" + encodeURIComponent(text);
+  window.open(url, "_blank");
+}
 }
