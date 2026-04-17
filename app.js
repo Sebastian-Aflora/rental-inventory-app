@@ -2,6 +2,8 @@ no let role = "staff";
 
 function login() {
   const pin = document.getElementById("pin").value;
+  
+  alert("PIN entered: " + pin);
 
   if (pin === "1234") role = "admin";
   else role = "staff";
