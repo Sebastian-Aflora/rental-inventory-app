@@ -1,4 +1,4 @@
-let role = "staff";
+no let role = "staff";
 
 function login() {
   const pin = document.getElementById("pin").value;
@@ -95,6 +95,7 @@ function resetData() {
   const apt = document.getElementById("apartment").value;
 
   db.collection("inventory").doc(apt).set({ items: defaultItems });
+}
   
   
 function translateNote(btn) {
