@@ -1,7 +1,7 @@
 body { font-family: Arial; padding: 10px; }
 button { padding: 8px; margin: 3px; }
 .item { border: 1px solid #ccc; padding: 10px; margin: 8px 0; }
-.ok { background: #d4edda; }
-.missing { background: #f8d7da; }
-.damaged { background: #fff3cd; }
+.ok { background: #d1fae5; border-left: 5px solid #10b981; }
+.missing { background: #fee2e2; border-left: 5px solid #ef4444; }
+.damaged { background: #fef3c7; border-left: 5px solid #f59e0b; }
 img { width: 100px; margin-top: 5px; }
